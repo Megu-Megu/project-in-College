@@ -1,0 +1,58 @@
+import mysql.connector
+
+#membuat driver mysql
+db= mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="megu_megu",
+)
+
+if db.is_connected():
+    print("berhasil")
+else:
+    print("gagal")
+
+#create data
+def create(db):
+    npm=int(input("masukan npm: "))
+    nama=str(input("masukan nama: "))
+    jurusan=str(input("masukan jurusan: "))
+
+    cursor=db.cursor()
+    value=(npm,nama,jurusan)
+    sql="insert into budi (npm,nama,jurusan) values(%s,%s,%s)"
+
+    cursor.execute(sql,value)
+    db.commit()
+    print('{} data berhasil diubah '.format(cursor.rowcount))
+
+create(db)
+
+#read data
+def read(db):
+    cursor = db.cursor()
+    sql = "select * from budi"
+    cursor.execute(sql)
+    r=cursor.fetchall()
+    for data in r:
+        print(data)
+
+read(db)
+
+def update(db):
+    read(db)
+    _id = int(input("masukan data yang akan diubah"))
+    npm = int(input("masukan NPM"))
+    nama=str(input("masukan nama: "))
+    jurusan=str(input("masukan jurusan: "))
+
+    cursor = db.cursor()
+    sql = 'UPDATE budi SET nama= %s,jurusan = %s WHERE npm = %s'
+    value = (nama , jurusan , npm)
+    cursor.execute(sql,value)
+    db.commit
+    print('{} data berhasil dibuah '.format (cursor.rowcount))
+    read(db)#panggilan fungsi read untuk melihat hasil
+update(db)
+
