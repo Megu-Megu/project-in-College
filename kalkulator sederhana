@@ -1,0 +1,48 @@
+#fungsi penjumlahan
+def tambah():
+    x = int(input("masukan bilangan : "))
+    y = int(input("masukan bilangan : "))
+    h = int(x) + int(y)
+    print(x,"+",y,"=",h)
+#fungsi pengurangan
+def kurang():
+    x = input("masukan bilangan : ")
+    y = input("masukan bilangan : ")
+    h= int(x)-int(y)
+    print(x,"-",y,"=",h)
+#fungsi perkalian
+def kali ():
+    x = input("masukan bilangan : ")
+    y = input("masukan bilangan : ")
+    h= int(x)*int(y)
+    print(x,"x",y,"=",h)
+#fungsi pembagia
+def bagi():
+    x = input("masukan bilangan : ")
+    y = input("masukan bilangan : ")
+    h=int(x)/int(y)
+    print(x,":",y,"=",h)
+
+def menu():
+    print("poilihlah operasi yang anda inginkan : ")
+    print("1. pemjumlahan")
+    print("2. pengurangan ")
+    print("3. perkalian")
+    print("4. pembagian")
+
+def kalkulator():
+    menu()
+    pilih=input("pilihan operasi anda : ")
+    if pilih=="1":
+        tambah()
+    elif pilih=="2":
+        kurang()
+    elif pilih=="3":
+        kali()
+    elif pilih=="4":
+        bagi()
+    else:
+        print("anda salah bang")
+
+kalkulator()
+    
