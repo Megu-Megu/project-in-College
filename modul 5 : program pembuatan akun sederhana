@@ -1,0 +1,16 @@
+import os
+os.system("cls")
+def password():
+    user = input("user-nya =  ")
+    passw = input("passwordnya = ")
+    username_form_db = "user"
+    password_form_db= "admin"
+    if user == username_form_db:
+        if passw == password_form_db:
+            print("username dan password cocok")
+        else:
+            print("passowrd salah")
+    else:
+        print("user tidak terdaftar")
+
+password()
