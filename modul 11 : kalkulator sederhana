@@ -4,19 +4,22 @@ def tambah():
     y = int(input("masukan bilangan : "))
     h = int(x) + int(y)
     print(x,"+",y,"=",h)
+    
 #fungsi pengurangan
 def kurang():
     x = input("masukan bilangan : ")
     y = input("masukan bilangan : ")
     h= int(x)-int(y)
     print(x,"-",y,"=",h)
+    
 #fungsi perkalian
 def kali ():
     x = input("masukan bilangan : ")
     y = input("masukan bilangan : ")
     h= int(x)*int(y)
     print(x,"x",y,"=",h)
-#fungsi pembagia
+    
+#fungsi pembagian
 def bagi():
     x = input("masukan bilangan : ")
     y = input("masukan bilangan : ")
