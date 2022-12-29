@@ -1,0 +1,25 @@
+#def fungsi dengan nama a
+def pembagian (angka1,angka2):
+    hasil=angka1/angka2
+    return hasil
+
+def pengurangan (angka1,angka2):
+    hasil=angka1-angka2
+    return hasil
+
+def perpangkatan (angka1,angka2):
+    hasil=angka1**angka2
+    return hasil
+
+def modulus (angka1,angka2):
+    hasil=angka1%angka2
+    return hasil
+    
+#program untuk import
+import a as f1
+bil1= int(input("masukan angka : "))
+bil2= int(input("masukan angka : "))
+print("hasil pembagian: ", f1.pembangian(bil1,bil2))
+print("hasil pengurangan: ", f1.pengurangan(bil1,bil2))
+print("hasil perpangkatan: ", f1.perpangkatan(bil1.bil2))
+print("hasil modulus: ", f1.modulus(bil1,bil2))
