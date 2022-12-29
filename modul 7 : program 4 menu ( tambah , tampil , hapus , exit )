@@ -1,0 +1,44 @@
+import os
+os.system("cls")
+nim=[]
+nama=[]
+asal=[]
+
+def menu():
+    print("1. masukan data ")
+    print("2. tampilkan data ")
+    print("3. hapus data ")
+    print("0. exit ")
+
+def masuk():
+    nim.append(input("masukan nim : "))
+    nama.append(input("masukan nama : "))
+    asal.append(input("masukan asal :"))
+
+def tampil():
+    print("nim" , "nama", " asal")
+    print(nim[0], nama[0] , asal[0])
+    if len(nim)==2:
+        print(nim[1], nama[1] , asal[1])
+
+def hapus():
+    del nim[0]
+    del nama[0]
+    del asal[0]
+
+def program():
+    menu()
+    pilih=input("masukan angka sesuai pilihan di menu: ")
+    if pilih=="1":
+        masuk()
+        program()
+    elif pilih=="2":
+        tampil()
+        program()
+    elif pilih=="3":
+        hapus()
+        program()
+    elif pilih=="0":
+        pass
+
+program()
