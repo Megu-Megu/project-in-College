@@ -1,0 +1,22 @@
+import os
+os.system("cls")
+angka=[1,2,3,4,5,6,7,8,9]
+def nentu():
+    pilih=input("tuliskan jumlah angka yang ingin di cari(genap / ganjiil) : ")
+    if pilih=="genap":
+        angka.remove(1)
+        angka.remove(3)
+        angka.remove(5)
+        angka.remove(7)
+        angka.remove(9)
+        print("banyak nya angka genap: ", len(angka))
+    elif pilih=="ganjil":
+        angka.remove(2)
+        angka.remove(4)
+        angka.remove(6)
+        angka.remove(8)
+        print("banyak nya angka ganjil: ", len(angka))
+
+def utama():
+    nentu()
+utama()
