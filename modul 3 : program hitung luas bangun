@@ -1,0 +1,7 @@
+L= int(input("masukan lebar persegi panjang : "))
+P= int(input("masukan panjang persegi panjang : "))
+D= int(input("masukan Diameter lingkaran : "))
+Luas_persegi= L*P
+Luas_SetLing= 0.5*3.14*(D/2)*(D/2)
+L_Bangun= L_persegi+L_SetLing
+print(L_Bangun)
