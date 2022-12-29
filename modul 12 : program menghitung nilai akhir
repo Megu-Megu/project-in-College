@@ -1,0 +1,28 @@
+def tugas(t1,t2):
+    return ((t1+t2)/2)*0.3
+
+def uts(n_uts):
+    return n_uts*0.3
+
+def uas(n_uas):
+    return n_uas*0.4
+
+def main():
+    tugas1 = int(input('Masukan Nilai Tugas 1 : '))
+    tugas2 = int(input('Masukan Nilai Tugas 2 : '))
+    nilai_uts = int(input('Masukan Nilai uts : '))
+    nilai_uas = int(input('Masukan Nilai uas : '))
+
+    hasil = tugas(tugas1,tugas2)+uts(nilai_uts)+uas(nilai_uas)
+
+    if ((hasil <= 100)and (hasil >=80)):
+        print(' Nilai akhir = A')
+    if ((hasil < 80)and (hasil >=60)):
+        print('Nilai akhir = B')
+    if ((hasil < 60)and (hasil >=40)):
+        print('Nilai akhir = C')
+    if ((hasil < 40)and (hasil >=20)):
+        print('Nilai akhir = D')
+    if ((hasil < 20)and (hasil >=0)):
+        print('Nilai akhir = E')
+main()
