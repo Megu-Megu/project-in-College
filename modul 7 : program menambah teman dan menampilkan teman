@@ -1,0 +1,23 @@
+import os
+os.system("cls")
+teman=[]
+def kanca():
+    print("inputkan teman yang ke",(len(teman)))
+    teman.append(input("nama : "))
+
+def lanjut():
+        kanca()
+        lanjut=str(input("mau isi lagi? (y/t)"))
+        if lanjut=="y":
+            program()
+        if lanjut=="t":
+            print(16*"=")
+            print("kamu memiliki", len(teman) , "teman")
+            print(teman[0])
+            print(teman[1])
+            print(teman[2])
+
+def program():
+    lanjut()
+
+program()
