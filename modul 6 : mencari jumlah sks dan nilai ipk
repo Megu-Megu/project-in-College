@@ -1,0 +1,9 @@
+import os
+os.system("cls")
+Nama_MK=["Agama","Matematika","Algoritma","Pemograman Web"]
+SKS=[2,3,3,2]
+Nilai=["A","A","C","B"]
+Bobot=[8,12,6,6]
+
+print(("Jumlah SKS anda :  "),sum(SKS))
+print(('Nilai IPK anda : '),sum(Bobot)/sum(SKS))
