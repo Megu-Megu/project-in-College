@@ -1,0 +1,16 @@
+import os
+os.system("cls")
+
+def dua_angka():
+    print("masukkan dua buah angka...")
+    print("Dan anda akan check hubungan kedua angka tersebut")
+    angka1= int(input("masukan angka pertama: "))
+    angka2= int(input("masukan angka kedua: "))
+    if angka1==angka2:
+        print(angka1,"sama dengan",angka2)
+
+def panggil():
+    print("contoh panggil fungsi fs_dua_angka2.py")
+    (dua_angka())
+
+panggil()
